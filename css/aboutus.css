@@ -1,0 +1,187 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5EE;
+    color: #333;
+}
+
+h1, h2 {
+    color: #FF5733;
+}
+
+/* Barra de navegación */
+header {
+    background-color: #de7a1c;
+    padding: 15px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección Hero */
+.hero {
+    background-color: #573102;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Sección ¿Quiénes Somos? */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about .text {
+    flex: 1;
+    text-align: left;
+}
+
+.about .image {
+    flex: 1;
+    text-align: center;
+}
+
+.about .image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Sección de Servicios */
+.services {
+    background-color: #573102;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #de7a1c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #573102;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Medios Responsivos */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .text, .about .image {
+        flex: none;
+        width: 100%;
+    }
+
+    .about .image img {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+}
+
+.imagen{
+    border-radius: 47%;
+}
