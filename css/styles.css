@@ -178,14 +178,6 @@ h2{
 
 }
 
-.contact-us{
-
-}
-.contact-us-btn{
-
-}
-
-
 footer {
     background-color: #202020;
     color: #ffffff;
@@ -241,4 +233,198 @@ footer {
     margin-top: 30px;
     font-size: 0.9em;
     color: #888888;
+}
+
+/*Formulario de contacto*/
+.contact-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+  
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #ff5733;
+    margin-bottom: 1rem;
+}
+  
+.contact-section p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+  
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+  
+.form-group {
+    text-align: left;
+}
+  
+.form-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+  
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+  
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ff5733;
+}
+  
+.submit-btn {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.submit-btn:hover {
+    background-color: #cc4628;
+}
+
+/*Apartado Ayuda*/
+.help-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.help-section h2 {
+    font-size: 2.5rem;
+    color: #ff5733;
+    margin-bottom: 1rem;
+}
+  
+.help-section p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+  
+.download-btn {
+    display: inline-block;
+    background-color: #ff5733;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+  
+.download-btn:hover {
+    background-color: #cc4628;
+}
+
+/*Responsive*/
+@media (max-width: 1024px) {
+    .nav-list {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .about-us {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    .about-us img {
+        width: 18rem;
+        height: 18rem;
+        margin: 2rem 0;
+    }
+    .services-box-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .service-box {
+        width: 100%;
+    }
+    .read-more-btn {
+        align-self: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .home {
+        padding: 1rem;
+    }
+    .home-text {
+        font-size: 3rem;
+    }
+    .about-us img {
+        width: 18rem;
+        height: 18rem;
+    }
+    .services img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .read-more-btn {
+        width: 10rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+    footer {
+        text-align: left;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-list {
+        font-size: 0.9rem;
+    }
+    .about-us {
+        padding: 1rem;
+    }
+    .about-us img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .service-box {
+        width: 100%;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    .footer-content h2,
+    .footer-about h2,
+    .footer-services h2 {
+        font-size: 1.2em;
+    }
+    .footer-content p,
+    .footer-about p,
+    .footer-services p {
+        font-size: 0.8rem;
+    }
 }
