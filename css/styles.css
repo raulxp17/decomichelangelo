@@ -384,10 +384,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    body {
-        background-color: red;
-    }
-    
     h1 {
         font-size: 1.5rem;
     }
@@ -395,7 +391,7 @@ footer {
         padding: 1rem;
     }
     .home-text {
-        font-size: 5rem; /*Esta línea de código no funciona al llegar a la resolución de 768px*/
+        font-size: 5rem; 
     }
     .about-us img {
         width: 18rem;
@@ -448,4 +444,27 @@ footer {
     .footer-services p {
         font-size: 0.8rem;
     }
+}
+
+@media (max-width: 430px){
+    .nav-list{
+        margin-top: 5rem;
+    }
+
+    .home-text {
+        font-size: 4rem; 
+    }
+
+    .nav-list {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 393px){
+    .services h2,
+    .about-us h2{
+        font-size: 2rem;
+    }
+
+    
 }

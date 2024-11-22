@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactos</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      /* Barra de navegación */
+      header {
+        background-color: #de7a1c;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header .logo img {
+        height: 80px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+
+      .contact-header {
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 2rem;
+      }
+
+      .contact-item {
+        background-color: #ff7518;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        flex: 1 1 30%;
+      }
+
+      .contact-item img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .contact-item a {
+        display: block;
+        margin-top: 10px;
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .contact-item a:hover {
+        color: #007bff;
+      }
+
+      /* Sección de Servicios */
+      .services {
+        background-color: #573102;
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      .services h2 {
+        font-size: 2.5em;
+      }
+
+      .services ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .services ul li {
+        margin: 15px 0;
+        font-size: 1.2em;
+      }
+
+      /* Pie de página */
+      footer {
+        background-color: #de7a1c;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra de Navegación -->
+    <header>
+      <div class="logo">
+        <img
+          src="https://decomichelangelo.vercel.app/images/logo.jpg"
+          alt="Decoraciones y Festejos Michelangelo C.A."
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="contacto.html">¿Quienes Somos?</a></li>
+          <li><a href="promociones.html">Promociones</a></li>
+          <li><a href="claudia.html">Contáctanos</a></li>
+          <li><a href="ayuda.html">Ayuda</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="contact-header">
+        <h1>Contactos</h1>
+        <p>
+          Puedes comunicarte con nosotros a través de los siguientes medios:
+        </p>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+            alt="WhatsApp"
+          />
+          <a href="https://wa.link/9l0ecv" target="_blank">WhatsApp</a>
+        </div>
+        <div class="contact-item">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+            alt="Instagram"
+          />
+          <a href="https://www.instagram.com/decomichelangeloca" target="_blank"
+            >Instagram</a
+          >
+        </div>
+        <div class="contact-item">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"
+            alt="Correo"
+          />
+          <a href="mailto:decomichelangeloca@gmail.com">Correo Electrónico</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="services">
+      <h2>Servicios</h2>
+      <ul>
+        <li>
+          <strong>Organización de eventos:</strong> Desde bodas hasta
+          celebraciones empresariales.
+        </li>
+        <li>
+          <strong>Decoración personalizada:</strong> Diseño exclusivo de
+          ambientes para cada ocasión.
+        </li>
+        <li>
+          <strong>Festejos temáticos:</strong> Creamos el ambiente ideal para
+          cualquier temática o estilo.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer id="contacto">
+      <p>
+        &copy; 2024 Decoraciones y Festejos Michelangelo C.A. | Todos los
+        derechos reservados
+      </p>
+      <p>Dirección: Club Ítalo Venezolano, Barquisimeto, Venezuela.</p>
+      <p>
+        Contacto:
+        <a href="mailto:info@michelangelo.com">info@michelangelo.com</a>
+      </p>
+    </footer>
+  </body>
+</html>
