@@ -22,50 +22,38 @@ h1 {
     font-family: "Open Sans", sans-serif;
     
 }
-.header{
-    text-align: center;
-    height: 18dvh;
-    
-}
 
-.logo-header{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 15%;
-    margin-top: 1rem;
-}
-
-.nav-bar-container{
+header {
+    background-color: #de7a1c;
+    padding: 15px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
-.nav-bar{
-    display: flex;
-    
-}
-.nav-list{
-    list-style-type: none;
-    display: flex;
-    gap: 6rem;
-    margin-bottom: 2rem;
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
+header .logo img {
+    height: 80px;
 }
 
-.nav-list a {
-    display: block;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #000000;
-    
-} 
+    font-weight: bold;
+}
 
-.nav-list a:hover {
-    color: #ff5733;
-    transition: .2s ease;
+nav ul li a:hover {
+    text-decoration: underline;
     
-    
-} 
+}
 
 .home{
     height: calc(100dvh - 11.5rem);
@@ -144,184 +132,101 @@ h2{
     max-width: 25rem;
     font-size: 1.2rem;
     text-indent: .6rem;
+    text-align: justify;
 }
 
-.services{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
+/* Projects Gallery */
+.projects-gallery {
+    text-align: center;
+    padding: 2rem 1rem;
 }
-
-.services img{
-    width: 3.5rem;
-    height: 3.5rem;
-    margin-bottom: 1rem;
+  
+.projects-gallery h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 2rem;
 }
-.services-box-container{ 
+  
+.gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
 }
-
-.service-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 1rem;
-    width: 20rem;
-    justify-content: center;
+  
+.gallery-img {
+    width: 18rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.gallery-img:hover {
+    transform: scale(1.25);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    border: solid 2px #ff5733;
 }
 
-.services p{
-    font-size: .85rem;
-    margin-top: .8rem;
-}
-
-.services h3{
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    color: #ff5733;
-
-}
-
-footer {
-    background-color: #202020;
-    color: #ffffff;
-    padding: 30px 20px;
+/* Servicios */
+.services {
+    background-color: #573102;
+    color: white;
+    padding: 50px 20px;
     text-align: center;
     font-family: "Poppins", sans-serif;
 }
-        
-.footer-content,
-.footer-about,
-.footer-services {
-    margin-bottom: 20px;
+
+.services h2 {
+    font-size: 2.5em;
 }
-    
-.footer-content h2,
-.footer-about h2,
-.footer-services h2 {
-    font-size: 1.6em;
-    font-family: "Open Sans", sans-serif;
-    margin-bottom: 15px;
-    color: #ff5733;
-    font-weight: 700;
-}
-    
-.footer-content ul,
-.footer-about ul,
-.footer-services ul {
-    list-style-type: none;
+
+.services ul {
+    list-style: none;
     padding: 0;
-}
-    
-.footer-content li,
-.footer-about li,
-.footer-services li {
-    margin: 10px 0;
-}
-    
-.footer-content a,
- .footer-about a,
-.footer-services a {
-    color: #888888;
-    text-decoration: none;
- transition: color 0.3s ease;
-}
-    
-.footer-content a:hover,
-.footer-about a:hover,
-.footer-services a:hover {
-    color: #ff5733;
-}
-    
-.footer-rights {
-    margin-top: 30px;
-    font-size: 0.9em;
-    color: #888888;
+    font-family: "Inter", sans-serif;
 }
 
-/*Formulario de contacto*/
-.contact-section {
-    padding: 2rem;
-    background-color: #ffffff;
+.services ul li {
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+/* Footer*/
+footer {
+    background-color: #de7a1c;
+    color: white;
     text-align: center;
+    padding: 20px 0;
     font-family: "Poppins", sans-serif;
+    bottom: 0;
 }
-  
-.contact-section h2 {
-    font-size: 2.5rem;
-    color: #ff5733;
-    margin-bottom: 1rem;
+
+footer p {
+    margin: 5px 0;
 }
-  
-.contact-section p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 2rem;
+
+footer a {
+    color: #573102;
+    text-decoration: none;
 }
-  
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-  
-.form-group {
-    text-align: left;
-}
-  
-.form-group label {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 0.5rem;
-    display: block;
-}
-  
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    font-family: "Poppins", sans-serif;
-}
-  
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #ff5733;
-}
-  
-.submit-btn {
-    background-color: #ff5733;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-  
-.submit-btn:hover {
-    background-color: #cc4628;
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /*Apartado Ayuda*/
+
 .help-section {
     padding: 2rem;
     background-color: #ffffff;
     text-align: center;
     font-family: "Poppins", sans-serif;
+    height: 50dvh;
+    margin-top: 5rem;
 }
 
 .help-section h2 {
@@ -363,8 +268,15 @@ footer {
         flex-wrap: wrap;
         align-items: center;
         text-align: center;
-        height: 100dvh;
+        height: 80dvh;
     }
+    
+    .read-more-btn {
+        height: 4rem;
+        width: 10rem;
+        margin-bottom: 5rem;
+    }
+
     .about-us img {
         width: 18rem;
         height: 18rem;
@@ -410,6 +322,13 @@ footer {
         text-align: left;
         padding: 15px;
     }
+    .gallery-item {
+        max-width: 100%;
+    }
+    
+    .gallery {
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -448,11 +367,12 @@ footer {
 
 @media (max-width: 430px){
     .nav-list{
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
 
     .home-text {
-        font-size: 4rem; 
+        font-size: 4rem;
+        margin: 0 auto;
     }
 
     .nav-list {
@@ -464,6 +384,10 @@ footer {
     .services h2,
     .about-us h2{
         font-size: 2rem;
+    }
+    
+    .nav-bar {
+        margin-top: 1rem;
     }
 
     
