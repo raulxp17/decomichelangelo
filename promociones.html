@@ -48,7 +48,6 @@
         display: inline-block;
         margin-top: 20px;
       }
-
       /* Barra de navegación */
       header {
         background-color: #de7a1c;
@@ -83,14 +82,83 @@
       nav ul li a:hover {
         text-decoration: underline;
       }
+      /* Servicios  */
+      .servicios1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        background-color:#fff5ee;
+      }
+
+      .services img{
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-bottom: 3rem;
+      }
+      .services-box-container{ 
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 3rem;
+      }
+      .service-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 4rem;
+        width: 20rem;
+        justify-content: center;
+      }
+      .boda{
+        justify-content: center;
+        margin: 5rem
+        width:10px;
+        height: 10px;
+        align-self: center;
+        margin-top: 8rem;
+      }
+      .imagens{
+        width:80px;
+        height: 80px;
+      }
+      .services p{
+          font-size: .85rem;
+          margin-top: .8rem;
+      }
+      .services h3{
+          font-family: "Open Sans", sans-serif;
+          font-weight: 700;
+          color: #ff5733;
+
+      }
+
+      .text{
+        text-align: justify;
+      }
       /* Sección de Servicios */
       .services {
-        background-color: #573102;
+        background-color:#573102;
         color: white;
         padding: 50px 20px;
         text-align: center;
       }
-
+      .decoracion{
+        justify-content: center;
+        gap: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .imagens{
+        border-radius: 1rem;
+        border: solid 0.15rem #fff;
+      }
+      .decoracion img{
+        width: 9rem;
+        height: 9rem;
+      }
       .services h2 {
         font-size: 2.5em;
       }
@@ -115,31 +183,90 @@
     </style>
   </head>
   <body>
-    <!-- Barra de Navegación -->
     <header>
       <div class="logo">
-        <img
-          src="images/logo.jpg"
-          alt="Decoraciones y Festejos Michelangelo C.A."
-        />
+        <a href="index.html"
+          ><img
+            src="images/logo.jpg"
+            alt="Decoraciones y Festejos Michelangelo C.A"
+            class="logo-header"
+        /></a>
       </div>
       <nav>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="contacto.html">¿Quienes Somos?</a></li>
-          <li><a href="promociones.html">Promociones</a></li>
-          <li><a href="claudia.html">Contáctanos</a></li>
-          <li><a href="ayuda.html">Ayuda</a></li>
+          <li><a href="index.html" target="_blank">Inicio</a></li>
+          <li><a href="contacto.html" target="_blank">¿Quiénes Somos?</a></li>
+          <li>
+            <a href="promociones.html" target="_blank"
+              >Servicios y Promociones</a
+            >
+          </li>
+          <li><a href="claudia.html" target="_blank">Contáctanos</a></li>
+          <li><a href="ayuda.html" target="_blank">Ayuda</a></li>
         </ul>
       </nav>
     </header>
+     </section>
+      <section class="servicios1">
+        <h2>Servicios</h2>
+        <div class="services-box-container">
+          <div class="service-box">
+            <img class="imagens" src=" images/Diseño sin título (10).png" alt="Icono Servicios" />
+            <h3>Decoración de Eventos</h3>
+            <p class="text">
+              Transformamos tus eventos con decoraciones únicas y
+              personalizadas. Cada detalle cuenta para crear un ambiente
+              memorable y especial.
+            </p>
+          </div>
+          <div class="boda">
+            <img class="imagens" src="images/Diseño sin título (9).png" alt="Icono Servicios" 
+            />
+            <h3>Organización de Bodas</h3>
+            <p class="text">
+              Realizamos la boda de tus sueños <br>con atención a cada detalle.<br> Deja
+              en nuestras manos la organización <br> y disfruta de un día
+              inolvidable.
+            </p>
+          </div>
+          <div class="service-box">
+            <img class="imagens" src= "images/Diseño sin título (7).png"
+            alt="Icono Servicios" />
+            <h3>Fiestas de Cumpleaños</h3>
+
+            <p class="text">
+              ¡Celebra cada cumpleaños con nosotros! Nos encargamos de hacer de
+              tu fiesta un momento inolvidable con decoraciones personalizadas y
+              sorpresas especiales.
+            </p>
+          </div>
+          <div class="service-box">
+            <img class="imagens" src="images/Diseño sin título (5).png"/>
+            <h3>Eventos Corporativos</h3>
+            <p class="text">
+              Transformamos tus eventos corporativos en experiencias memorables.
+              Confía en nosotros para crear un ambiente profesional y elegante
+              que impresione a tus invitados.
+            </p>
+          </div>
+          <div class="service-box">
+            <img class="imagens" src="images/Diseño sin título (4).png" alt="Icono Servicios"  />
+            <h3>Alquiler de Salones</h3>
+            <p class="text">
+              Ofrecemos el alquiler de salones ideales para tus celebraciones.
+              Disfruta de un espacio versátil y bien equipado para hacer de tu
+              evento un éxito.
+            </p>
+          </div>
+        </div>
+      </section>
     <div>
-      <h1>Promociones de Nuestros Servicios</h1>
+      <h1>Promociones Activas</h1>
     </div>
     <div class="tabla-precios">
       <div class="precio-col">
         <h3>500$</h3>
-        <p>Promocion 1</p>
+        <p><b>Promocion 1</b></p>
         <p>100 Sillas-10 Mesas</p>
         <p>Meson Para Torta y Dulce</p>
         <p>Mesas VIP Con Sus Sillas</p>
@@ -154,11 +281,11 @@
         <p>Hieleras</p>
         <p>Luces Decorativas</p>
 
-        <a href="#" class="contratar">Contratar</a>
+        <a href="https://wa.link/9l0ecv" class="contratar">Contratar</a>
       </div>
       <div class="precio-col">
         <h3>300$</h3>
-        <p>Promocion 2</p>
+        <p><b>Promocion 2</b></p>
         <p>60 Sillas-60 Mesas</p>
         <p>Meson Para Torta y Dulce</p>
         <p>Mesas VIP Con Sus Sillas</p>
@@ -172,11 +299,11 @@
         <p>Tarima</p>
         <p>Hieleras</p>
         <p>Luces Decorativas</p>
-        <a href="#" class="contratar">Contratar</a>
+        <a href="https://wa.link/9l0ecv" class="contratar">Contratar</a>
       </div>
       <div class="precio-col">
         <h3>200$</h3>
-        <p>Promocion 3</p>
+        <p><b>Promocion 3</b></p>
         <p>40 Sillas-4 Mesas</p>
         <p>Meson Para Torta y Dulce</p>
         <p>Mesas VIP Con Sus Sillas</p>
@@ -190,26 +317,24 @@
         <p>Tarima</p>
         <p>Hieleras</p>
         <p>Luces Decorativas</p>
-        <a href="#" class="contratar">Contratar</a>
+        <a href="https://wa.link/9l0ecv" class="contratar">Contratar</a>
       </div>
     </div>
     <!-- Sección Servicios -->
     <section id="servicios" class="services">
       <h2>Servicios</h2>
-      <ul>
-        <li>
-          <strong>Organización de eventos:</strong> Desde bodas hasta
-          celebraciones empresariales.
-        </li>
-        <li>
-          <strong>Decoración personalizada:</strong> Diseño exclusivo de
-          ambientes para cada ocasión.
-        </li>
-        <li>
-          <strong>Festejos temáticos:</strong> Creamos el ambiente ideal para
-          cualquier temática o estilo.
-        </li>
-      </ul>
+       <div class="decoracion">
+            <img class="imagens" src="images/decoracion 5.jpg" alt="Icono Servicios " 
+            />
+            <img class="imagens" src="images/decoracion 4.jpeg" alt="Icono Servicios " 
+            />
+            <img class="imagens" src="images/decoracion 3.jpeg" alt="Icono Servicios " 
+            />
+            <img class="imagens" src="images/decoracion 2.jpeg" alt="Icono Servicios " 
+            />
+            <img class="imagens" src="images/decoracion 1.jpeg" alt="Icono Servicios " 
+            />
+          </div>
     </section>
 
     <!-- Pie de Página -->

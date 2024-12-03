@@ -1,5 +1,6 @@
 /* Estilos generales */
 body {
+    justify-content: center;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -11,6 +12,10 @@ h1, h2 {
     color: #FF5733;
 }
 
+.text p{
+    text-align: justify;
+}
+
 /* Barra de navegación */
 header {
     background-color: #de7a1c;
@@ -20,6 +25,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
 header .logo img {
@@ -101,7 +109,16 @@ nav ul li a:hover {
     padding: 50px 20px;
     text-align: center;
 }
-
+.decoracion {
+    justify-content: center;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.decoracion img {
+    width: 9rem;
+    height: 9rem;
+}
 .services h2 {
     font-size: 2.5em;
 }
@@ -110,10 +127,14 @@ nav ul li a:hover {
     list-style: none;
     padding: 0;
 }
-
+.imagens {
+    border-radius: 1rem;
+    border: solid 0.15rem #fff;
+}
 .services ul li {
     margin: 15px 0;
     font-size: 1.2em;
+
 }
 
 /* Pie de Página */
